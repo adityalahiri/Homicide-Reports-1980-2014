@@ -7,9 +7,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 df = pd.read_csv("database.csv")
-unsolved = df[df["Perpetrator Sex"]=="Unknown"]
+solved = len(df[df["Crime Solved"]=="Yes"])
 
-solved = len(df) - len(unsolved)
 
 # query 2 - Top 5 weapons used
 
